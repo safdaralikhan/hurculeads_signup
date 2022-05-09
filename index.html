@@ -500,7 +500,7 @@ body {
 
     $.ajax({
 
-url: `http://hurculeads.developer-oa.xyz/Api/newcustomernotification?Firstname=${firstname}&Lastname=${lastname}&Email=${email}&PhoneNumber=${phone}&State=${state}&ZipCode=${zipcode}&CreditCard_Debt_Amount=${card}&Vertical_list_id=2&Vendor_id=2`,
+url: `http://134.122.125.118:8005/Api/newcustomernotification?Firstname=${firstname}&Lastname=${lastname}&Email=${email}&PhoneNumber=${phone}&State=${state}&ZipCode=${zipcode}&CreditCard_Debt_Amount=${card}&Vertical_list_id=2&Vendor_id=2`,
 type: 'GET',
 // data: {
 
@@ -512,7 +512,7 @@ success: function (data) {
   console.log("DATA",data)
   // localStorage.setItem("chaneelid", data.data[0].customerid)
 
-  window.open(`http://localhost:3000/customerchat/CustomerChat?id=${data.data[0].customerid}`,"_blank")
+  window.open(`http://hurculeads.developer-oa.xyz/customerchat/CustomerChat?id=${data.data[0].customerid}`,"_blank")
   // firstname.value=("")
   $("#formsubmit").get(0).reset()
 
